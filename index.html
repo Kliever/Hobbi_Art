@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220915151842">
+  <!-- вставка параметра в title -->
+  <title>"Главная страница"</title> 
+</head>
+
+<body>
+  <div class="body-inner">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <address class="header__top-inner">
+        <a href="tel:+79247652820" class="header__phone-link">
+          <svg class="header__phone-icon">
+            <use xlink:href="img/icons/icons.svg#phone"></use>
+          </svg>
+          <span class="header__phone-text">+7 (924) 765 28 20</span>
+        </a>
+        <a href="https://www.google.com.ua/maps/place/ул.+Петра+Алексеева,+6,+Якутск,+Респ.+Саха+(Якутия),+Россия,+677000/@62.0368222,129.7376158,20z/data=!4m5!3m4!1s0x5bf64a4492e3267b:0xb200dfbb20168b03!8m2!3d62.036863!4d129.7375549?hl=ru"
+          target="_blank" class="header__address-link">
+          <svg class="header__address-icon">
+            <use xlink:href="img/icons/icons.svg#map-pointer"></use>
+          </svg>
+          <span class="header__address-text">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</span>
+        </a>
+        <span class="header__schedule">
+          <svg class="header__schedule-icon">
+            <use xlink:href="img/icons/icons.svg#clock"></use>
+          </svg>
+          <span class="header__schedule-text">Ежедневно с 10:00 до 19:00</span></span>
+      </address>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <button class="menu__btn">
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+          </button>
+
+
+
+          <div class="menu__inner">
+            <div class="menu__table">
+              <div class="menu__table-cell">
+                <ul class="menu__list">
+                  <button class="menu__btn-close">
+                    <div class="menu__btn-line"></div>
+                    <div class="menu__btn-line"></div>
+                  </button>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Каталог
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Оплата и доставка
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Бонусная программа
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      О компании
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Контакты
+                    </a></li>
+                  <li class="menu__list-item"><button class="menu__list-link menu__burger-item menu__burger-item-btn">
+                      Войти
+                    </button></li>
+                  <li class="menu__list-item"><a href="#"
+                      class="menu__list-link menu__burger-item">
+                      <span class="menu__burger-text">Избранное</span>
+                      <span class="menu__burger-num header-btn-num">2</span>
+                    </a></li>
+                  <li class="menu__list-item"><a href="#"
+                      class="menu__list-link menu__burger-item">
+                      <span class="menu__burger-text">Корзина</span>
+                      <span class="menu__burger-num header-btn-num">1</span>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </nav>
+        <a href="#" class="header__logo logo">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="logo__img"></picture>
+        </a>
+        <div class="header__control">
+          <form action="" class="header__search search">
+            <input type="text" class="search__input" placeholder="Поиск товара">
+            <button class="search__submit btn-standart">
+              <svg class="search__submit-icon" viewBox="0 0 13 13">
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <button href="#" class="header__enter-btn header-control-btn btn-standart">
+            <svg class="header__enter-icon" viewBox="0 0 16 15">
+              <use xlink:href="img/icons/icons.svg#enter"></use>
+            </svg>
+            <span class="header__enter-text">
+              Войти
+            </span>
+          </button>
+          <a href="#" class="header__favorites-link header-control-btn btn-standart">
+            <svg class="header__favorites-icon" viewBox="0 0 14 14">
+              <use xlink:href="img/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="header__favorites-text">
+              Избранное
+            </span>
+            <span class="header__enter-num header-btn-num">2</span>
+          </a>
+          <a href="#" class="header__basket-link header-control-btn btn-standart">
+            <svg class="header__basket-icon" viewBox="0 0 11 11">
+              <use xlink:href="img/icons/icons.svg#basket"></use>
+            </svg>
+            <span class="header__basket-text">
+              Корзина
+            </span>
+            <span class="header__enter-num header-btn-num">1</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="top-slider">
+  <div class="container">
+    <div class="top-slider__inner swiper-container">
+      <div class="top-slider__box swiper-wrapper">
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
+                кругу (специалистов) участие в формировании форм воздействия.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
+                кругу (специалистов) участие в формировании форм воздействия.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
+                кругу (специалистов) участие в формировании форм воздействия.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-slider__navigation slider-navigation">
+        <button class="top-slider__btn-prev slider-navigation__prev"></button>
+        <div class="top-slider__pagination"></div>
+        <button class="top-slider__btn-next slider-navigation__next"></button>
+      </div>
+    </div>
+  </div>
+</div>
+    <main class="main">
+
+      <div class="main-tabs">
+        <div class="container">
+          <div class="main-tabs__inner tabs">
+            <div class="main-tabs__btns tabs__btns">
+              <button class="main-tabs__btn tabs__btn active" data-tab-name="new">Новинки</button>
+              <button class="main-tabs__selector"></button>
+              <button class="main-tabs__btn tabs__btn" data-tab-name="popular">популярное</button>
+            </div>
+            <div class="main-tabs__items tabs__items">
+              <div class="main-tabs__item tabs__item" data-tab-name="new">
+                <div class="main-tabs__item-slider-wrapper">
+                  <div class="main-tabs__navigation">
+                    <button
+                      class="main-tabs__navigation-prev slider-navigation__prev main-tabs__navigation-prev--new"></button>
+                    <button
+                      class="main-tabs__navigation-next slider-navigation__next main-tabs__navigation-next--new"></button>
+                  </div>
+                  <div class="main-tabs__slider swiper-container main-tabs__slider-new">
+                    <div class="main-tabs__slider-wrapper swiper-wrapper">
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-1.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-1.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Пряжа Macrametr
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-2.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-2.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Кольца бамбук
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-3.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-3.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Трикотажная пряжа Zefirka
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-4.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-4.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Шпагат крученый
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-5.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-5.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Джут «Арахна»
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-1.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-1.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Пряжа Macrametr
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-2.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-2.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Кольца бамбук
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-3.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-3.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Трикотажная пряжа Zefirka
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-4.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-4.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Шпагат крученый
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-5.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-5.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Джут «Арахна»
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-tabs__item tabs__item" data-tab-name="popular">
+                <div class="main-tabs__item-slider-wrapper">
+                  <div class="main-tabs__navigation">
+                    <button
+                      class="main-tabs__navigation-prev slider-navigation__prev main-tabs__navigation-prev--popular"></button>
+                    <button
+                      class="main-tabs__navigation-next slider-navigation__next main-tabs__navigation-next--popular"></button>
+                  </div>
+                  <div class="main-tabs__slider swiper-container main-tabs__slider-popular">
+                    <div class="main-tabs__slider-wrapper swiper-wrapper">
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-3.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-3.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Трикотажная пряжа Zefirka
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-4.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-4.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Шпагат крученый
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-1.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-1.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Пряжа Macrametr
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-5.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-5.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Джут «Арахна»
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-2.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-2.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Кольца бамбук
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-1.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-1.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Пряжа Macrametr
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-2.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-2.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Кольца бамбук
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-3.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-3.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Трикотажная пряжа Zefirka
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-4.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-4.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Шпагат крученый
+                          </p>
+                        </div>
+                      </a>
+                      <a class="main-tabs__slide swiper-slide">
+                        <picture><source srcset="img/temp/main-tabs/main-tab-img-5.webp" type="image/webp"><img class="main-tabs__slide-img" src="img/temp/main-tabs/main-tab-img-5.jpg" alt=""></picture>
+                        <div class="main-tabs__slide-inner">
+                          <p class="main-tabs__slide-name">
+                            Джут «Арахна»
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="main-catalog">
+        <div class="container">
+          <div class="main-catalog__inner">
+            <span class="main-catalog__bg-text">Каталог</span>
+            <h2 class="main-catalog__title title">
+              Каталог товаров
+            </h2>
+            <div class="main-catalog__items">
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+              <a href="#" class="main-catalog__item main-catalog-item">
+                <div class="main-catalog-item__inner">
+                  <picture><source srcset="img/temp/main-catalog/main-catalog-1.webp" type="image/webp"><img class="main-catalog-item__img" src="img/temp/main-catalog/main-catalog-1.png" alt=""></picture>
+                  <div class="main-catalog-item__info">
+                    <span class="main-catalog-item__name">Макраме</span>
+                    <span class="main-catalog-item__price">от 250 ₽</span>
+                  </div>
+                  <span class="main-catalog-item__link">Подробнее</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-advantages">
+        <div class="container">
+          <div class="main-advantages__inner">
+            <h2 class="main-advantages__title title">
+              Хобби арт: 9 лет на рынке
+            </h2>
+            <div class="main-advantages__items">
+              <div class="main-advantages__item">
+                <img src="img/icons/truck.svg" alt="" class="main-advantages__img">
+                <div class="main-advantages__item-info">
+                  <h4 class="main-advantages__item-title">
+                    Поставщики
+                  </h4>
+                  <p class="main-advantages__descr">
+                    Мы работаем только с надежными
+                    и проверенными поставщиками товаров
+                    для творчества
+                  </p>
+                </div>
+              </div>
+              <div class="main-advantages__item">
+                <img src="img/icons/knitting.svg" alt="" class="main-advantages__img">
+                <div class="main-advantages__item-info">
+                  <h4 class="main-advantages__item-title">
+                    товары
+                  </h4>
+                  <p class="main-advantages__descr">
+                    Мы привозим актуальные и новые товары, инструменты для вашего творчества по низким ценам
+                  </p>
+                </div>
+              </div>
+              <div class="main-advantages__item">
+                <img src="img/icons/money.svg" alt="" class="main-advantages__img">
+                <div class="main-advantages__item-info">
+                  <h4 class="main-advantages__item-title">
+                    Бонусы
+                  </h4>
+                  <p class="main-advantages__descr">
+                    У нас действует накопительная бонусная система скидок. Дарим в день рождения 500 бонусных рублей
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-gallery">
+        <div class="container">
+          <div class="main-gallery__inner">
+            <h2 class="main-gallery__title title">
+              наш instagram
+            </h2>
+            <div class="main-gallery__items">
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-1.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-1.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-2.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-2.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-3.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-3.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-4.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-4.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-5.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-5.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="main-gallery__item">
+                <picture><source srcset="img/temp/main-gallery/main-gallery-6.webp" type="image/webp"><img src="img/temp/main-gallery/main-gallery-6.jpg" alt="" class="main-gallery__item-img"></picture>
+                <div class="main-gallery__item-inner">
+                  <div class="main-gallery__item-info">
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--heart" viewBox="0 0 14 14">
+                        <use xlink:href="img/icons/icons.svg#heart"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">34</span>
+                    </div>
+                    <div class="main-gallery__info-block">
+                      <svg class="main-gallery__info-icon main-gallery__info-icon--reviews" viewBox="0 0 35 36">
+                        <use xlink:href="img/icons/icons.svg#reviews"></use>
+                      </svg>
+                      <span class="main-gallery__info-counter">0</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="main-gallery__link color-btn main-btn">@hobbyart_dv</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-callback">
+        <div class="container">
+          <div class="main-callback__inner">
+            <h2 class="main-callback__title title">
+              Есть вопрос? Мы перезвоним!
+            </h2>
+            <form class="main-callback__form form-validation">
+              <input type="text" class="main-callback__input input form-validation__item" placeholder="Ваше имя">
+              <input type="tel" class="main-callback__input input form-validation__item" placeholder="Телефон">
+              <div class="main-callback__submit">
+                <button type="submit" class="main-callback__submit-btn color-btn main-btn form-validation__submit">Отправить</button>
+                <span class="main-callback__submit-info">
+                  *нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <address class="footer__column">
+        <a href="#" class="footer__logo">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="footer__logo-img"></picture>
+        </a>
+        <ul class="footer__address-list">
+          <li class="footer__address-item"><a href="tel:+79247652820" class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--phone" viewBox="0 0 14 14">
+                  <use xlink:href="img/icons/icons.svg#phone"></use>
+                </svg>
+              </div>
+              +7 (924) 765 28 20
+            </a></li>
+          <li class="footer__address-item"><a class="footer__address-link"
+              href="https://www.google.com.ua/maps/place/ул.+Петра+Алексеева,+6,+Якутск,+Респ.+Саха+(Якутия),+Россия,+677000/@62.0368222,129.7376158,20z/data=!4m5!3m4!1s0x5bf64a4492e3267b:0xb200dfbb20168b03!8m2!3d62.036863!4d129.7375549?hl=ru"
+              target="_blank">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--map-pointer" viewBox="0 0 10 15">
+                  <use xlink:href="img/icons/icons.svg#map-pointer"></use>
+                </svg>
+              </div>
+              г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”
+            </a></li>
+          <li class="footer__address-item">
+            <span class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--clock" viewBox="0 0 15 15">
+                  <use xlink:href="img/icons/icons.svg#clock"></use>
+                </svg>
+              </div>
+              Ежедневно с 10:00 до 19:00
+            </span>
+          </li>
+          <li class="footer__address-item"><a href="#" class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--instagram" viewBox="0 0 20 20">
+                  <use xlink:href="img/icons/icons.svg#instagram"></use>
+                </svg>
+              </div>
+              @hobbyart_dv
+            </a></li>
+        </ul>
+      </address>
+      <nav class="footer__column">
+        <ul class="footer__column-list">
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Каталог
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Акции
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Новинки
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Популярное
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Гарантия и возврат
+            </a></li>
+        </ul>
+      </nav>
+      <nav class="footer__column">
+        <ul class="footer__column-list">
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Оплата и доставка
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Бонусная программа
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              О компании
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Преимущества
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Личный кабинет
+            </a></li>
+        </ul>
+      </nav>
+      <div class="footer__column footer-info">
+        <h5 class="footer-info__title">
+          Узнавайте первым о новинках и новостях
+        </h5>
+        <form class="footer-info__form form-validation">
+          <div class="footer-info__form-wrapper">
+            <input type="email" class="footer-info__input input form-validation__item" name="email" placeholder="Ваш Email">
+            <button type="submit" class="footer-info__submit color-btn form-validation__submit">подписаться</button>
+          </div>
+          <label class="footer-info__input-label" for="email">
+            Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+          </label>
+        </form>
+        <p class="footer-info__descr">
+          © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права защищены. Условия
+          использования и политика конфиденциальности
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="js/app.min.js?_v=20220915151842"></script>
+</body>
+
+</html>

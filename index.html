@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220915153152">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220917211948">
   <!-- вставка параметра в title -->
   <title>"Главная страница"</title> 
 </head>
@@ -15,20 +15,20 @@
     <div class="container">
       <address class="header__top-inner">
         <a href="tel:+79247652820" class="header__phone-link">
-          <svg class="header__phone-icon">
+          <svg class="header__phone-icon" viewBox="0 0 14 14">
             <use xlink:href="img/icons/icons.svg#phone"></use>
           </svg>
           <span class="header__phone-text">+7 (924) 765 28 20</span>
         </a>
         <a href="https://www.google.com.ua/maps/place/ул.+Петра+Алексеева,+6,+Якутск,+Респ.+Саха+(Якутия),+Россия,+677000/@62.0368222,129.7376158,20z/data=!4m5!3m4!1s0x5bf64a4492e3267b:0xb200dfbb20168b03!8m2!3d62.036863!4d129.7375549?hl=ru"
           target="_blank" class="header__address-link">
-          <svg class="header__address-icon">
+          <svg class="header__address-icon" viewBox="0 0 10 15">
             <use xlink:href="img/icons/icons.svg#map-pointer"></use>
           </svg>
           <span class="header__address-text">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</span>
         </a>
         <span class="header__schedule">
-          <svg class="header__schedule-icon">
+          <svg class="header__schedule-icon" viewBox="0 0 15 15">
             <use xlink:href="img/icons/icons.svg#clock"></use>
           </svg>
           <span class="header__schedule-text">Ежедневно с 10:00 до 19:00</span></span>
@@ -44,9 +44,6 @@
             <div class="menu__btn-line"></div>
             <div class="menu__btn-line"></div>
           </button>
-
-
-
           <div class="menu__inner">
             <div class="menu__table">
               <div class="menu__table-cell">
@@ -70,9 +67,6 @@
                   <li class="menu__list-item"><a href="#" class="menu__list-link">
                       Контакты
                     </a></li>
-                  <li class="menu__list-item"><button class="menu__list-link menu__burger-item menu__burger-item-btn">
-                      Войти
-                    </button></li>
                   <li class="menu__list-item"><a href="#"
                       class="menu__list-link menu__burger-item">
                       <span class="menu__burger-text">Избранное</span>
@@ -87,24 +81,20 @@
               </div>
             </div>
           </div>
-
-
-
-
         </nav>
         <a href="#" class="header__logo logo">
           <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="logo__img"></picture>
         </a>
         <div class="header__control">
           <form action="" class="header__search search">
-            <input type="text" class="search__input" placeholder="Поиск товара">
+            <input type="text" class="search__input" placeholder="Поиск товара" required>
             <button class="search__submit btn-standart">
               <svg class="search__submit-icon" viewBox="0 0 13 13">
                 <use xlink:href="img/icons/icons.svg#search"></use>
               </svg>
             </button>
           </form>
-          <button href="#" class="header__enter-btn header-control-btn btn-standart">
+          <button class="header__enter-btn header-control-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">
             <svg class="header__enter-icon" viewBox="0 0 16 15">
               <use xlink:href="img/icons/icons.svg#enter"></use>
             </svg>
@@ -692,8 +682,8 @@
               Есть вопрос? Мы перезвоним!
             </h2>
             <form class="main-callback__form form-validation">
-              <input type="text" class="main-callback__input input form-validation__item" placeholder="Ваше имя">
-              <input type="tel" class="main-callback__input input form-validation__item" placeholder="Телефон">
+              <input type="text" class="main-callback__input input form-validation__item" placeholder="Ваше имя" required>
+              <input type="tel" class="main-callback__input input form-validation__item" placeholder="Телефон" required>
               <div class="main-callback__submit">
                 <button type="submit" class="main-callback__submit-btn color-btn main-btn form-validation__submit">Отправить</button>
                 <span class="main-callback__submit-info">
@@ -812,7 +802,119 @@
   </div>
 </footer>
   </div>
-  <script src="js/app.min.js?_v=20220915153152"></script>
+
+  <div class="popup sign-in-popup js-popup">
+  <div class="popup__table sign-in-popup__table">
+    <div class="popup__table-cell sign-in-popup__cell js-popup-area">
+      <div class="popup__window sign-in-popup__window popup-block">
+        <button class="popup__close sign-in-popup__close js-popup-close"></button>
+        <h3 class="sign-in-popup__title popup-title">
+          Войти в личный кабинет
+        </h3>
+        <form action="" class="sign-in-popup__form form-validation">
+          <input type="tel" class="sign-in-popup__input input form-validation__item" placeholder="Номер телефона"
+            required>
+
+          <label class="sign-in-popup__input-pass-label password-visibility">
+            <input type="password"
+              class="sign-in-popup__input sign-in-popup__input-pass input form-validation__item password-visibility__input"
+              placeholder="Пароль" required>
+            <button class="sign-in-popup__input-pass-watch-btn password-visibility__btn"></button>
+          </label>
+
+          <label class="sign-in-popup__check-label check">
+            <input type="checkbox" class="sign-in-popup__check check__input" required>
+            <span class="check__box">
+              <svg class="check__box-mark" viewBox="0 0 6 6">
+                <use xlink:href="img/icons/icons.svg#check-mark">
+              </svg>
+            </span>
+            Запомнить меня
+          </label>
+          <div class="sign-in-popup__btn-block">
+            <button class="sign-in-popup__submit color-btn form-validation__submit">
+              Войти
+            </button>
+            <button class="sign-in-popup__forgot-password js-open-popup-btn" data-popup-name="forgot-pass-popup">
+              Забыли пароль?
+            </button>
+          </div>
+        </form>
+        <span class="sign-in-popup__descr">
+          Вы еще не зарегистрированы?
+        </span>
+        <button class="sign-in-popup__registration main-btn btn-standart js-open-popup-btn" data-popup-name="registration-popup">
+          регистрация
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup forgot-pass-popup js-popup">
+  <div class="popup__table forgot-pass-popup__table">
+    <div class="popup__table-cell forgot-pass-popup__cell js-popup-area">
+      <div class="popup__window forgot-pass-popup__window popup-block">
+        <button class="popup__close forgot-pass-popup__close js-popup-close"></button>
+        <h3 class="forgot-pass-popup__title popup-title">
+          Забыли пароль?
+        </h3>
+        <form class="forgot-pass-popup__form form-validation">
+          <input id="forgotPasswordInput" type="email" class="forgot-pass-popup__input form-validation__item input" placeholder="Введите ваш E-mail" required>
+          <label for="forgotPasswordInput" class="forgot-pass-popup__input-label">
+            На E-mail придет письмо со ссылкой на смену пароля
+          </label>
+          <button class="forgot-pass-popup__submit form-validation__submit color-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup registration-popup js-popup">
+  <div class="popup__table registration-popup__table">
+    <div class="popup__table-cell registration-popup__cell js-popup-area">
+      <div class="popup__window registration-popup__window popup-block">
+        <button class="popup__close registration-popup__close js-popup-close"></button>
+        <h3 class="registration-popup__title popup-title">
+          Регистрация
+        </h3>
+        <form class="registration-popup__form form-validation">
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Имя" required>
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Фамилия"
+            required>
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Отчество"
+            required>
+          <input type="tel" class="registration-popup__input form-validation__item input" placeholder="Номер телефона"
+            required>
+          <input type="email" class="registration-popup__input form-validation__item input" placeholder="E-mail"
+            required>
+          <label class="registration-popup__pass-label password-visibility">
+            <input type="password" id="createPasswordInput"
+              class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__pass" placeholder="Придумайте пароль" required>
+              <button class="registration-popup__pass-btn password-visibility__btn"></button>
+          </label>
+          <label class="registration-popup__pass-label password-visibility">
+            <input type="password" class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__repeat-pass" placeholder="Повторите пароль" required>
+              <button class="registration-popup__pass-btn password-visibility__btn"></button>
+          </label>
+          <label for="createPasswordInput" class="registration-popup__input-pass-label">
+            Пароль должен содержать от 6 символов
+          </label>
+          <button class="registration-popup__submit form-validation__submit color-btn">Зарегистрироваться</button>
+        </form>
+        <div class="registration-popup__btn-block">
+          <span class="registration-popup__btn-descr">
+            Есть аккаунт?
+          </span>
+          <button class="registration-popup__btn main-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="js/app.min.js?_v=20220917211948"></script>
 </body>
 
 </html>

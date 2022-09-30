@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220917211948">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220930205459">
   <!-- вставка параметра в title -->
   <title>"Главная страница"</title> 
 </head>
@@ -39,7 +39,7 @@
     <div class="container">
       <div class="header__bottom-inner">
         <nav class="header__menu menu">
-          <button class="menu__btn">
+          <button type="button" class="menu__btn">
             <div class="menu__btn-line"></div>
             <div class="menu__btn-line"></div>
             <div class="menu__btn-line"></div>
@@ -48,7 +48,7 @@
             <div class="menu__table">
               <div class="menu__table-cell">
                 <ul class="menu__list">
-                  <button class="menu__btn-close">
+                  <button type="button" class="menu__btn-close">
                     <div class="menu__btn-line"></div>
                     <div class="menu__btn-line"></div>
                   </button>
@@ -88,13 +88,13 @@
         <div class="header__control">
           <form action="" class="header__search search">
             <input type="text" class="search__input" placeholder="Поиск товара" required>
-            <button class="search__submit btn-standart">
+            <button type="button" class="search__submit btn-standart">
               <svg class="search__submit-icon" viewBox="0 0 13 13">
                 <use xlink:href="img/icons/icons.svg#search"></use>
               </svg>
             </button>
           </form>
-          <button class="header__enter-btn header-control-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">
+          <button type="button" class="header__enter-btn header-control-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">
             <svg class="header__enter-icon" viewBox="0 0 16 15">
               <use xlink:href="img/icons/icons.svg#enter"></use>
             </svg>
@@ -162,8 +162,7 @@
                 Пряжа Macrametr
               </h2>
               <p class="top-slider__item-descr">
-                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
-                кругу (специалистов) участие в формировании форм воздействия.
+                Спицы для вязания Zing KnitPro — изготовленные из высококачественного алюминия, очень легкие но прочные, обладают долгим сроком службы, очень удобное соответствие размеров и цветов спиц. На всех спица нанесена не стираемая лазерная гравировка с размерами.
               </p>
               <div class="top-slider__item-link-wrapper">
                 <a href="#" class="top-slider__item-link color-btn">
@@ -184,8 +183,7 @@
                 Пряжа Macrametr
               </h2>
               <p class="top-slider__item-descr">
-                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
-                кругу (специалистов) участие в формировании форм воздействия.
+                Гладкая поверхность гарантирует легкое и беспрепятственное скольжение, пряжи серебряные наконечники спиц с безупречно зауженной формой идеально подходят для всех типов нитей и каждого вашего проекта.
               </p>
               <div class="top-slider__item-link-wrapper">
                 <a href="#" class="top-slider__item-link color-btn">
@@ -197,9 +195,9 @@
         </div>
       </div>
       <div class="top-slider__navigation slider-navigation">
-        <button class="top-slider__btn-prev slider-navigation__prev"></button>
+        <button type="button" class="top-slider__btn-prev slider-navigation__prev"></button>
         <div class="top-slider__pagination"></div>
-        <button class="top-slider__btn-next slider-navigation__next"></button>
+        <button type="button" class="top-slider__btn-next slider-navigation__next"></button>
       </div>
     </div>
   </div>
@@ -210,9 +208,9 @@
         <div class="container">
           <div class="main-tabs__inner tabs">
             <div class="main-tabs__btns tabs__btns">
-              <button class="main-tabs__btn tabs__btn active" data-tab-name="new">Новинки</button>
-              <button class="main-tabs__selector"></button>
-              <button class="main-tabs__btn tabs__btn" data-tab-name="popular">популярное</button>
+              <button type="button" class="main-tabs__btn tabs__btn active" data-tab-name="new">Новинки</button>
+              <button type="button" class="main-tabs__selector"></button>
+              <button type="button" class="main-tabs__btn tabs__btn" data-tab-name="popular">популярное</button>
             </div>
             <div class="main-tabs__items tabs__items">
               <div class="main-tabs__item tabs__item" data-tab-name="new">
@@ -807,7 +805,7 @@
   <div class="popup__table sign-in-popup__table">
     <div class="popup__table-cell sign-in-popup__cell js-popup-area">
       <div class="popup__window sign-in-popup__window popup-block">
-        <button class="popup__close sign-in-popup__close js-popup-close"></button>
+        <button type="button" class="popup__close sign-in-popup__close js-popup-close"></button>
         <h3 class="sign-in-popup__title popup-title">
           Войти в личный кабинет
         </h3>
@@ -819,7 +817,7 @@
             <input type="password"
               class="sign-in-popup__input sign-in-popup__input-pass input form-validation__item password-visibility__input"
               placeholder="Пароль" required>
-            <button class="sign-in-popup__input-pass-watch-btn password-visibility__btn"></button>
+            <button type="button" class="sign-in-popup__input-pass-watch-btn password-visibility__btn"></button>
           </label>
 
           <label class="sign-in-popup__check-label check">
@@ -832,10 +830,10 @@
             Запомнить меня
           </label>
           <div class="sign-in-popup__btn-block">
-            <button class="sign-in-popup__submit color-btn form-validation__submit">
+            <button type="button" class="sign-in-popup__submit color-btn form-validation__submit">
               Войти
             </button>
-            <button class="sign-in-popup__forgot-password js-open-popup-btn" data-popup-name="forgot-pass-popup">
+            <button type="button" class="sign-in-popup__forgot-password js-open-popup-btn" data-popup-name="forgot-pass-popup">
               Забыли пароль?
             </button>
           </div>
@@ -843,7 +841,7 @@
         <span class="sign-in-popup__descr">
           Вы еще не зарегистрированы?
         </span>
-        <button class="sign-in-popup__registration main-btn btn-standart js-open-popup-btn" data-popup-name="registration-popup">
+        <button type="button" class="sign-in-popup__registration main-btn btn-standart js-open-popup-btn" data-popup-name="registration-popup">
           регистрация
         </button>
       </div>
@@ -854,7 +852,7 @@
   <div class="popup__table forgot-pass-popup__table">
     <div class="popup__table-cell forgot-pass-popup__cell js-popup-area">
       <div class="popup__window forgot-pass-popup__window popup-block">
-        <button class="popup__close forgot-pass-popup__close js-popup-close"></button>
+        <button type="button" class="popup__close forgot-pass-popup__close js-popup-close"></button>
         <h3 class="forgot-pass-popup__title popup-title">
           Забыли пароль?
         </h3>
@@ -863,7 +861,7 @@
           <label for="forgotPasswordInput" class="forgot-pass-popup__input-label">
             На E-mail придет письмо со ссылкой на смену пароля
           </label>
-          <button class="forgot-pass-popup__submit form-validation__submit color-btn">Отправить</button>
+          <button type="button" class="forgot-pass-popup__submit form-validation__submit color-btn">Отправить</button>
         </form>
       </div>
     </div>
@@ -873,7 +871,7 @@
   <div class="popup__table registration-popup__table">
     <div class="popup__table-cell registration-popup__cell js-popup-area">
       <div class="popup__window registration-popup__window popup-block">
-        <button class="popup__close registration-popup__close js-popup-close"></button>
+        <button type="button" class="popup__close registration-popup__close js-popup-close"></button>
         <h3 class="registration-popup__title popup-title">
           Регистрация
         </h3>
@@ -890,22 +888,113 @@
           <label class="registration-popup__pass-label password-visibility">
             <input type="password" id="createPasswordInput"
               class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__pass" placeholder="Придумайте пароль" required>
-              <button class="registration-popup__pass-btn password-visibility__btn"></button>
+              <button type="button" class="registration-popup__pass-btn password-visibility__btn"></button>
           </label>
           <label class="registration-popup__pass-label password-visibility">
             <input type="password" class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__repeat-pass" placeholder="Повторите пароль" required>
-              <button class="registration-popup__pass-btn password-visibility__btn"></button>
+              <button type="button" class="registration-popup__pass-btn password-visibility__btn"></button>
           </label>
           <label for="createPasswordInput" class="registration-popup__input-pass-label">
             Пароль должен содержать от 6 символов
           </label>
-          <button class="registration-popup__submit form-validation__submit color-btn">Зарегистрироваться</button>
+          <button type="submit" class="registration-popup__submit form-validation__submit color-btn">Зарегистрироваться</button>
         </form>
         <div class="registration-popup__btn-block">
           <span class="registration-popup__btn-descr">
             Есть аккаунт?
           </span>
-          <button class="registration-popup__btn main-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">войти</button>
+          <button type="button" class="registration-popup__btn main-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup gratitude-popup js-popup">
+  <div class="popup__table gratitude-popup__table">
+    <div class="popup__table-cell gratitude-popup__cell js-popup-area">
+      <div class="popup__window gratitude-popup__window">
+        <button type="button" class="popup__close gratitude-popup__close js-popup-close"></button>
+        <h3 class="gratitude-popup__title popup-title">
+          Благодарим за покупку!
+        </h3>
+        <p class="gratitude-popup__descr">
+          В ближайшее время с вами свяжется менеджер для подтверждения заказа
+        </p>
+        <a href="#" class="gratitude-popup__btn color-btn" >
+          личный кабинет
+        </a>
+        <div class="gratitude-popup__recommended-block recommended-block">
+          <h3 class="recommended-block__title recommended-block-title">
+            Вам может понравиться
+          </h3>
+          <div class="recommended-block__inner">
+            <article class="recommended-block__item product-item">
+  <button type="button" class="product-item__favorites">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="product-item__favorites-icon">
+      <path class="product-item__favorites-icon-bg" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+      <path class="product-item__favorites-icon-border" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+      </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <h4 class="product-item__title">
+      Пряжа Arachna "Macrame MINI"
+    </h4>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">1053</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    Купить
+  </a>
+</article>
+            <article class="recommended-block__item product-item">
+  <button type="button" class="product-item__favorites">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="product-item__favorites-icon">
+      <path class="product-item__favorites-icon-bg" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+      <path class="product-item__favorites-icon-border" d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z"/>
+      </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <h4 class="product-item__title">
+      Пряжа Arachna "Macrame MINI"
+    </h4>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">1053</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    Купить
+  </a>
+</article>
+          </div>
         </div>
       </div>
     </div>
@@ -914,7 +1003,7 @@
 
 
 
-  <script src="js/app.min.js?_v=20220917211948"></script>
+  <script src="js/app.min.js?_v=20220930205459"></script>
 </body>
 
 </html>

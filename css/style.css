@@ -3614,6 +3614,7 @@ body._active-popup {
   -o-transition: transform 3s;
   transition: transform 3s;
   transition: transform 3s, -webkit-transform 3s;
+  will-change: transform;
 }
 
 .main-gallery__item-info {

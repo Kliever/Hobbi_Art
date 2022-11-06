@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221106153714">
+  <title>Личный кабинет</title> 
+</head>
+
+<body>
+  <div class="body-inner">
+    <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <address class="header__top-inner">
+        <a href="tel:+79247652820" class="header__phone-link" title="Связаться с нами">
+          <svg class="header__phone-icon" viewBox="0 0 14 14">
+            <use xlink:href="img/icons/icons.svg#phone"></use>
+          </svg>
+          <span class="header__phone-text">+7 (924) 765 28 20</span>
+        </a>
+        <a href="https://www.google.com.ua/maps/place/ул.+Петра+Алексеева,+6,+Якутск,+Респ.+Саха+(Якутия),+Россия,+677000/@62.0368222,129.7376158,20z/data=!4m5!3m4!1s0x5bf64a4492e3267b:0xb200dfbb20168b03!8m2!3d62.036863!4d129.7375549?hl=ru" title="Как нас найти"
+          target="_blank" class="header__address-link">
+          <svg class="header__address-icon" viewBox="0 0 10 15">
+            <use xlink:href="img/icons/icons.svg#map-pointer"></use>
+          </svg>
+          <span class="header__address-text">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</span>
+        </a>
+        <span class="header__schedule">
+          <svg class="header__schedule-icon" viewBox="0 0 15 15">
+            <use xlink:href="img/icons/icons.svg#clock"></use>
+          </svg>
+          <span class="header__schedule-text">Ежедневно с 10:00 до 19:00</span></span>
+      </address>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <nav class="header__menu menu">
+          <button type="button" class="menu__btn">
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+            <div class="menu__btn-line"></div>
+          </button>
+          <div class="menu__inner">
+            <div class="menu__table">
+              <div class="menu__table-cell">
+                <ul class="menu__list">
+                  <button type="button" class="menu__btn-close">
+                    <div class="menu__btn-line"></div>
+                    <div class="menu__btn-line"></div>
+                  </button>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Каталог
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Оплата и доставка
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Бонусная программа
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      О компании
+                    </a></li>
+                  <li class="menu__list-item"><a href="#" class="menu__list-link">
+                      Контакты
+                    </a></li>
+                  <li class="menu__list-item"><a href="#"
+                      class="menu__list-link menu__burger-item">
+                      <span class="menu__burger-text">Избранное</span>
+                      <span class="menu__burger-num header-btn-num">2</span>
+                    </a></li>
+                  <li class="menu__list-item"><a href="#"
+                      class="menu__list-link menu__burger-item">
+                      <span class="menu__burger-text">Корзина</span>
+                      <span class="menu__burger-num header-btn-num">1</span>
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <a href="#" class="header__logo logo">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="logo__img"></picture>
+        </a>
+        <div class="header__control">
+          <form action="" class="header__search search">
+            <input type="text" class="search__input" placeholder="Поиск товара" required>
+            <button type="button" class="search__submit btn-standart">
+              <svg class="search__submit-icon" viewBox="0 0 13 13">
+                <use xlink:href="img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <button type="button" class="header__enter-btn header-control-btn btn-standart js-open-popup-btn" title="Вход в личный кабинет" data-popup-name="sign-in-popup">
+            <svg class="header__enter-icon" viewBox="0 0 16 15">
+              <use xlink:href="img/icons/icons.svg#enter"></use>
+            </svg>
+            <span class="header__enter-text">
+              Войти
+            </span>
+          </button>
+          <a href="#" class="header__favorites-link header-control-btn btn-standart" title="Избранное">
+            <svg class="header__favorites-icon" viewBox="0 0 14 14">
+              <use xlink:href="img/icons/icons.svg#heart"></use>
+            </svg>
+            <span class="header__favorites-text">
+              Избранное
+            </span>
+            <span class="header__enter-num header-btn-num">2</span>
+          </a>
+          <a href="#" class="header__basket-link header-control-btn btn-standart" title="Корзина">
+            <svg class="header__basket-icon" viewBox="0 0 11 11">
+              <use xlink:href="img/icons/icons.svg#basket"></use>
+            </svg>
+            <span class="header__basket-text">
+              Корзина
+            </span>
+            <span class="header__enter-num header-btn-num">1</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="top-slider">
+  <div class="container">
+    <div class="top-slider__inner swiper-container">
+      <div class="top-slider__box swiper-wrapper">
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому
+                кругу (специалистов) участие в формировании форм воздействия.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Спицы для вязания Zing KnitPro — изготовленные из высококачественного алюминия, очень легкие но прочные, обладают долгим сроком службы, очень удобное соответствие размеров и цветов спиц. На всех спица нанесена не стираемая лазерная гравировка с размерами.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-slider__item swiper-slide">
+          <div class="top-slider__item-bgtext"></div>
+          <div class="top-slider__item-inner">
+            <div class="top-slider__item-picture">
+              <picture><source srcset="img/temp/top-slider/top-slider-img-1.webp" type="image/webp"><img src="img/temp/top-slider/top-slider-img-1.png" alt="" class="top-slider__item-img"></picture>
+            </div>
+            <div class="top-slider__item-text">
+              <h2 class="top-slider__item-title">
+                Пряжа Macrametr
+              </h2>
+              <p class="top-slider__item-descr">
+                Гладкая поверхность гарантирует легкое и беспрепятственное скольжение, пряжи серебряные наконечники спиц с безупречно зауженной формой идеально подходят для всех типов нитей и каждого вашего проекта.
+              </p>
+              <div class="top-slider__item-link-wrapper">
+                <a href="#" class="top-slider__item-link color-btn">
+                  В каталог
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-slider__navigation slider-navigation">
+        <button type="button" class="top-slider__btn-prev slider-navigation__prev"></button>
+        <div class="top-slider__pagination"></div>
+        <button type="button" class="top-slider__btn-next slider-navigation__next"></button>
+      </div>
+    </div>
+  </div>
+</div>
+    <main class="main">
+      <div class="page-broadcrumbs broadcrumbs">
+        <div class="container">
+          <ul class="broadcrumbs__list">
+            <li class="broadcrumbs__item">
+              <a href="#" class="broadcrumbs__link">
+                Главная
+              </a>
+            </li>
+            <li class="broadcrumbs__item">
+              Личный кабинет
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account__inner">
+            <h1 class="account__title title">
+              личный кабинет
+            </h1>
+            <div class="account__block tabs">
+              <div class="account__block-menu account-menu">
+                <div class="account-menu__personality">
+                  <div class="account-menu__personality-avatar">
+                    <picture><source srcset="img/temp/account/avatar.webp" type="image/webp"><img src="img/temp/account/avatar.jpg" alt="" class="account-menu__personality-avatar-img"></picture>
+                  </div>
+                  <p class="account-menu__personality-name">
+                    Ольга Иванова
+                  </p>
+                </div>
+                <ul class="account-menu__list">
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="data">
+                      <span class="account-menu__list-btn-text">
+                        Мои данные
+                      </span>
+                    </button>
+                  </li>
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="bonus">
+                      <span class="account-menu__list-btn-text">
+                        Бонусный счет
+                      </span>
+                    </button>
+                  </li>
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="favorites">
+                      <span class="account-menu__list-btn-text">
+                        Избранные товары
+                      </span>
+                    </button>
+                  </li>
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="history">
+                      <span class="account-menu__list-btn-text">
+                        История заказов
+                      </span>
+                    </button>
+                  </li>
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="mailing">
+                      <span class="account-menu__list-btn-text">
+                        Рассылка
+                      </span>
+                    </button>
+                  </li>
+                  <li class="account-menu__list-item">
+                    <button class="account-menu__list-btn tabs__btn" data-tab-name="reviews">
+                      <span class="account-menu__list-btn-text">
+                        Отзывы
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+                <a href="#" class="account-menu__exit-link">Выйти из личного кабинета</a>
+              </div>
+              <div class="account__info">
+                <div class="account__info-tab account-data tabs__item" data-tab-name="data">
+                  <h2 class="account-data__title account-title">
+                    Мои данные
+                  </h2>
+                  <form class="account-data__form form-validation">
+                    <div class="account-data__form-block">
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Имя:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="Ольга">Ольга</div>
+                          <input type="text" class="modern-input__info-input js-input-area-new form-validation__item" value="Ольга">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Номер телефона:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="+7 (987) 954 32 16">+7 (987) 954 32 16</div>
+                          <input class="modern-input__info-input js-input-area-new form-validation__item js-phone-mask" value="+7(987)9543216">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Фамилия:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="Иванова">Иванова</div>
+                          <input type="text" class="modern-input__info-input js-input-area-new form-validation__item" value="Иванова">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            E-mail:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="olga@gmail.com">olga@gmail.com</div>
+                          <input type="email" class="modern-input__info-input js-input-area-new form-validation__item" value="olga@gmail.com">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Отчество:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="Ивановна">Ивановна</div>
+                          <input type="text" class="modern-input__info-input js-input-area-new form-validation__item" value="Ивановна">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Адрес:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="Самара, Сакко и Ванцетти 40, кв. 170">Самара, Сакко и Ванцетти 40, кв. 170</div>
+                          <input type="text" class="modern-input__info-input js-input-area-new form-validation__item" value="Самара, Сакко и Ванцетти 40, кв. 170">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Дата рождения:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default" title="15.06.1986">15.06.1986</div>
+                          <input type="date" class="modern-input__info-input js-input-area-new form-validation__item" value="1986-06-15">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                      <div class="account-data__info modern-input js-input-area">
+                        <div class="modern-input__info">
+                          <span class="modern-input__info-name">
+                            Пароль:
+                          </span>
+                          <div class="modern-input__info-data js-input-area-default js-input-area-pass">password</div>
+                          <input type="text" class="modern-input__info-input js-input-area-new form-validation__item" value="password">
+                        </div>
+                        <button class="modern-input__info-btn js-input-area-btn" type="button">
+                          Изменить
+                        </button>
+                      </div>
+                    </div>
+                    <button class="account-data__form-submit main-btn color-btn form-validation__submit" type="submit">
+                      Сохранить данные
+                    </button>
+                  </form>
+
+
+
+
+                </div>
+                <div class="account__info-tab account-bonus tabs__item" data-tab-name="bonus">
+                  <h2 class="account-bonus__title account-title">
+                    Бонусный счет
+                  </h2>
+                  <p class="account-bonus__descr">
+                    На вашем счете
+                    <span class="account-bonus__descr-select">
+                      112 бонусов
+                    </span>
+                    , которые вы можете потратить.
+                  </p>
+                </div>
+                <div class="account__info-tab account-favorites tabs__item" data-tab-name="favorites">
+                  <h2 class="account-favorites__title account-title">
+                    Избранные товары
+                  </h2>
+                  <div class="account-favorites__block">
+                    <article class="recommended-block__item product-item js-product-item" data-price="360">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        Трикотажная пряжа Zефирка
+      </h4>
+      <div class="product-item__descr">
+  <p class="product-item__descr-text">100% хлопок</p>
+  <p class="product-item__descr-text">Вес: 380 г, длина нити: 100 м</p>
+</div>
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">360</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+                    <article class="recommended-block__item product-item js-product-item" data-price="135">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        Пряжа трикотажная Arachna «Слинг Принт»
+      </h4>
+      <div class="product-item__descr">
+  <p class="product-item__descr-text">100% хлопок</p>
+  <p class="product-item__descr-text">Вес: 380 г, длина нити: 100 м</p>
+</div>
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">135</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+                    <article class="recommended-block__item product-item js-product-item" data-price="510">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        Пряжа Katia Merino Flame
+      </h4>
+      <div class="product-item__descr">
+  <p class="product-item__descr-text">100% хлопок</p>
+  <p class="product-item__descr-text">Вес: 380 г, длина нити: 100 м</p>
+</div>
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">510</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+                    <article class="recommended-block__item product-item js-product-item" data-price="1092">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        "Пряжа Arachna "Macrame MAXI"
+      </h4>
+      <div class="product-item__descr">
+  <p class="product-item__descr-text">100% хлопок</p>
+  <p class="product-item__descr-text">Вес: 380 г, длина нити: 100 м</p>
+</div>
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">1092</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+                    <article class="recommended-block__item product-item js-product-item" data-price="1092">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        "Пряжа Arachna "Macrame MAXI"
+      </h4>
+      <div class="product-item__descr">
+  <p class="product-item__descr-text">100% хлопок</p>
+  <p class="product-item__descr-text">Вес: 380 г, длина нити: 100 м</p>
+</div>
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">1092</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+                  </div>
+                </div>
+                <div class="account__info-tab account-history tabs__item" data-tab-name="history">
+                  <h2 class="account-history__title account-title">
+                    История заказов
+                  </h2>
+                  <div class="account-history__accordion history-accordion spoller">
+                    <div class="history-accordion__block">
+                      <div class="history-accordion__visible-parth">
+                        <div class="history-accordion__visible-parth-inner">
+                          <p class="history-accordion__order-num">
+                            Заказ № HA10066F7O от 10.06.2021 15:26:30, 14 товара на сумму 2 232 ₽
+                          </p>
+                          <div class="history-accordion__lead-time">
+                            <p class="history-accordion__descr">
+                              Заказ выполнен
+                            </p>
+                            <time class="history-accordion__date" datetime="2021-06-14">
+                              14.06.2021
+                            </time>
+                          </div>
+                          <div class="history-accordion__cell">
+                            <button class="history-accordion__open-item-btn spoller__btn" data-name="spoller1">
+                              Подробнее о заказе
+                            </button>
+                          </div>
+                          <div class="history-accordion__cell">
+                            <button class="history-accordion__repeat-order">
+                              Повторить заказ
+                            </button>
+                          </div>
+                        </div>
+                        <div class="history-accordion__hidden-parth spoller__item" data-name="spoller1">
+                          <div class="history-accordion__hidden-parth-inner spoller__item-inner">
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-1.webp" type="image/webp"><img src="img/temp/order-item/order-item-1.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Шпагат Macrametr 4 мм, 100 нитей
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                332 ₽
+                              </p>
+                            </article>
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-2.webp" type="image/webp"><img src="img/temp/order-item/order-item-2.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Шпагат джутовый Сибшнур 500 м
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                385 ₽
+                              </p>
+                            </article>
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-3.webp" type="image/webp"><img src="img/temp/order-item/order-item-3.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Пряжа трикотажная Arachna «Слинг Принт»
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                135 ₽
+                              </p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="history-accordion__block">
+                      <div class="history-accordion__visible-parth">
+                        <div class="history-accordion__visible-parth-inner">
+                          <p class="history-accordion__order-num">
+                            Заказ № HA10066F7O от 10.06.2021 15:26:30, 14 товара на сумму 2 232 ₽
+                          </p>
+                          <div class="history-accordion__lead-time">
+                            <p class="history-accordion__descr">
+                              Заказ выполнен
+                            </p>
+                            <time class="history-accordion__date" datetime="2021-06-14">
+                              14.06.2021
+                            </time>
+                          </div>
+                          <div class="history-accordion__cell">
+                            <button class="history-accordion__open-item-btn spoller__btn" data-name="spoller2">
+                              Подробнее о заказе
+                            </button>
+                          </div>
+                          <div class="history-accordion__cell">
+                            <button class="history-accordion__repeat-order">
+                              Повторить заказ
+                            </button>
+                          </div>
+                        </div>
+                        <div class="history-accordion__hidden-parth spoller__item" data-name="spoller2">
+                          <div class="history-accordion__hidden-parth-inner spoller__item-inner">
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-1.webp" type="image/webp"><img src="img/temp/order-item/order-item-1.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Шпагат Macrametr 4 мм, 100 нитей
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                332 ₽
+                              </p>
+                            </article>
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-2.webp" type="image/webp"><img src="img/temp/order-item/order-item-2.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Шпагат джутовый Сибшнур 500 м
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                385 ₽
+                              </p>
+                            </article>
+                            <article class="history-accordion__order-item order-item">
+                              <div class="order-item__img-block">
+                                <picture><source srcset="img/temp/order-item/order-item-3.webp" type="image/webp"><img src="img/temp/order-item/order-item-3.jpg" alt="" class="order-item__img"></picture>
+                              </div>
+                              <h4 class="order-item__prosuct-name">
+                                Пряжа трикотажная Arachna «Слинг Принт»
+                              </h4>
+                              <p class="order-item__product-count">
+                                1 шт
+                              </p>
+                              <p class="order-item__price">
+                                135 ₽
+                              </p>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="account__info-tab account-mailing tabs__item" data-tab-name="mailing">
+                  <h2 class="account-mailing__title account-title">
+                    Рассылка
+                  </h2>
+                  <div class="account-mailing__block account-mailing__block-subscribe active">
+                    <p class="account-mailing__info">
+                      Вы не подписаны на рассылку
+                    </p>
+                    <p class="account-mailing__descr">
+                      Подписаться на рассылку о новинках и акциях
+                    </p>
+                    <form class="account-mailing__form form-subscribe form-validation">
+                      <div class="form-subscribe__wrapper">
+                        <input type="email" class="form-subscribe__input input form-validation__item" name="email"
+                          placeholder="Ваш Email">
+                        <button type="submit"
+                          class="form-subscribe__submit color-btn form-validation__submit">подписаться</button>
+                      </div>
+                      <label class="form-subscribe__input-label" for="email">
+                        Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+                      </label>
+                    </form>
+                  </div>
+                  <div class="account-mailing__block account-mailing__block-unsubscribe">
+                    <p class="account-mailing__info">
+                      Вы подписаны на рассылку о новинках и акциях
+                    </p>
+                    <p class="account-mailing__descr">
+                      Хотите отписаться от рассылки?
+                    </p>
+                    <form action="" class="account-mailing__form-unsubscribe form-subscribe">
+                      <div class="form-subscribe__wrapper">
+                        <button type="submit" class="form-subscribe__submit color-btn form-validation__submit">да,
+                          отписаться</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="account__info-tab account-reviews tabs__item" data-tab-name="reviews">
+                  <h2 class="account-reviews__title account-title">
+                    Мои отзывы
+                  </h2>
+                  <article class="account-reviews__review review">
+                    <div class="review__top">
+                      <div class="review__star-rating star-rating" data-rating="3">
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                      </div>
+                      <time class="review__date" datetime="2001-05-15 19:00">
+                        13.06.2021 12:30
+                      </time>
+                    </div>
+                    <div class="review__info">
+                      <div class="review__img-block">
+                        <picture><source srcset="img/temp/reviews/review-1.webp" type="image/webp"><img src="img/temp/reviews/review-1.jpg" alt="" class="review__img"></picture>
+                      </div>
+                      <div class="review__text">
+                        <h3 class="review__title">
+                          Шпагат Macrametr 4 мм, 100 нитей
+                        </h3>
+                        <p class="review__descr">
+                          <span class="review__pre-descr">
+                            Комментарий:
+                          </span>
+                          Хороший шпагат
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="account-reviews__review review">
+                    <div class="review__top">
+                      <div class="review__star-rating star-rating" data-rating="5">
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                        <div class="star-rating__star" style="background-image: url(img/icons/star-regular.svg);"></div>
+                      </div>
+                      <time class="review__date" datetime="2001-05-15 19:00">
+                        13.06.2021 12:30
+                      </time>
+                    </div>
+                    <div class="review__info">
+                      <div class="review__img-block">
+                        <picture><source srcset="img/temp/reviews/review-2.webp" type="image/webp"><img src="img/temp/reviews/review-2.jpg" alt="" class="review__img"></picture>
+                      </div>
+                      <div class="review__text">
+                        <h3 class="review__title">
+                          Пряжа трикотажная Arachna «Слинг Принт»
+                        </h3>
+                        <p class="review__descr">
+                          <span class="review__pre-descr">
+                            Комментарий:
+                          </span>
+                          Пряжа понравилась, по качеству отличная)
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <address class="footer__column">
+        <a href="#" class="footer__logo">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="footer__logo-img"></picture>
+        </a>
+        <ul class="footer__address-list">
+          <li class="footer__address-item"><a href="tel:+79247652820" class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--phone" viewBox="0 0 14 14">
+                  <use xlink:href="img/icons/icons.svg#phone"></use>
+                </svg>
+              </div>
+              +7 (924) 765 28 20
+            </a></li>
+          <li class="footer__address-item"><a class="footer__address-link"
+              href="https://www.google.com.ua/maps/place/ул.+Петра+Алексеева,+6,+Якутск,+Респ.+Саха+(Якутия),+Россия,+677000/@62.0368222,129.7376158,20z/data=!4m5!3m4!1s0x5bf64a4492e3267b:0xb200dfbb20168b03!8m2!3d62.036863!4d129.7375549?hl=ru"
+              target="_blank">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--map-pointer" viewBox="0 0 10 15">
+                  <use xlink:href="img/icons/icons.svg#map-pointer"></use>
+                </svg>
+              </div>
+              г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”
+            </a></li>
+          <li class="footer__address-item">
+            <span class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--clock" viewBox="0 0 15 15">
+                  <use xlink:href="img/icons/icons.svg#clock"></use>
+                </svg>
+              </div>
+              Ежедневно с 10:00 до 19:00
+            </span>
+          </li>
+          <li class="footer__address-item"><a href="#" class="footer__address-link">
+              <div class="footer__address-icon-wrapper">
+                <svg class="footer__address-icon footer__address-icon--instagram" viewBox="0 0 20 20">
+                  <use xlink:href="img/icons/icons.svg#instagram"></use>
+                </svg>
+              </div>
+              @hobbyart_dv
+            </a></li>
+        </ul>
+      </address>
+      <nav class="footer__column">
+        <ul class="footer__column-list">
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Каталог
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Акции
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Новинки
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Популярное
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Гарантия и возврат
+            </a></li>
+        </ul>
+      </nav>
+      <nav class="footer__column">
+        <ul class="footer__column-list">
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Оплата и доставка
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Бонусная программа
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              О компании
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Преимущества
+            </a></li>
+          <li class="footer__column-item"><a href="#" class="footer__column-link">
+              Личный кабинет
+            </a></li>
+        </ul>
+      </nav>
+      <div class="footer__column footer-info">
+        <h5 class="footer-info__title">
+          Узнавайте первым о новинках и новостях
+        </h5>
+        <form class="footer-info__form form-subscribe form-validation">
+          <div class="form-subscribe__wrapper">
+            <input type="email" class="form-subscribe__input input form-validation__item" name="email" placeholder="Ваш Email">
+            <button type="submit" class="form-subscribe__submit color-btn form-validation__submit">подписаться</button>
+          </div>
+          <label class="form-subscribe__input-label" for="email">
+            Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности
+          </label>
+        </form>
+        <p class="footer-info__descr">
+          © 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права защищены. Условия
+          использования и политика конфиденциальности
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <div class="popup sign-in-popup js-popup">
+  <div class="popup__table sign-in-popup__table">
+    <div class="popup__table-cell sign-in-popup__cell js-popup-area">
+      <div class="popup__window sign-in-popup__window popup-block">
+        <button type="button" class="popup__close sign-in-popup__close js-popup-close"></button>
+        <h3 class="sign-in-popup__title popup-title">
+          Войти в личный кабинет
+        </h3>
+        <form action="" class="sign-in-popup__form form-validation">
+          <input type="tel" class="sign-in-popup__input input form-validation__item" placeholder="Номер телефона"
+            required>
+
+          <label class="sign-in-popup__input-pass-label password-visibility">
+            <input type="password"
+              class="sign-in-popup__input sign-in-popup__input-pass input form-validation__item password-visibility__input"
+              placeholder="Пароль" required>
+            <button type="button" class="sign-in-popup__input-pass-watch-btn password-visibility__btn"></button>
+          </label>
+
+          <label class="sign-in-popup__check-label check">
+            <input type="checkbox" class="sign-in-popup__check check__input" required>
+            <span class="check__box">
+              <svg class="check__box-mark" viewBox="0 0 6 6">
+                <use xlink:href="img/icons/icons.svg#check-mark">
+              </svg>
+            </span>
+            Запомнить меня
+          </label>
+          <div class="sign-in-popup__btn-block">
+            <button type="button" class="sign-in-popup__submit color-btn form-validation__submit">
+              Войти
+            </button>
+            <button type="button" class="sign-in-popup__forgot-password js-open-popup-btn" data-popup-name="forgot-pass-popup">
+              Забыли пароль?
+            </button>
+          </div>
+        </form>
+        <span class="sign-in-popup__descr">
+          Вы еще не зарегистрированы?
+        </span>
+        <button type="button" class="sign-in-popup__registration main-btn btn-standart js-open-popup-btn" data-popup-name="registration-popup">
+          регистрация
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup forgot-pass-popup js-popup">
+  <div class="popup__table forgot-pass-popup__table">
+    <div class="popup__table-cell forgot-pass-popup__cell js-popup-area">
+      <div class="popup__window forgot-pass-popup__window popup-block">
+        <button type="button" class="popup__close forgot-pass-popup__close js-popup-close"></button>
+        <h3 class="forgot-pass-popup__title popup-title">
+          Забыли пароль?
+        </h3>
+        <form class="forgot-pass-popup__form form-validation">
+          <input id="forgotPasswordInput" type="email" class="forgot-pass-popup__input form-validation__item input" placeholder="Введите ваш E-mail" required>
+          <label for="forgotPasswordInput" class="forgot-pass-popup__input-label">
+            На E-mail придет письмо со ссылкой на смену пароля
+          </label>
+          <button type="button" class="forgot-pass-popup__submit form-validation__submit color-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup registration-popup js-popup">
+  <div class="popup__table registration-popup__table">
+    <div class="popup__table-cell registration-popup__cell js-popup-area">
+      <div class="popup__window registration-popup__window popup-block">
+        <button type="button" class="popup__close registration-popup__close js-popup-close"></button>
+        <h3 class="registration-popup__title popup-title">
+          Регистрация
+        </h3>
+        <form class="registration-popup__form form-validation">
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Имя" required>
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Фамилия"
+            required>
+          <input type="text" class="registration-popup__input form-validation__item input" placeholder="Отчество"
+            required>
+          <input type="tel" class="registration-popup__input form-validation__item input" placeholder="Номер телефона"
+            required>
+          <input type="email" class="registration-popup__input form-validation__item input" placeholder="E-mail"
+            required>
+          <label class="registration-popup__pass-label password-visibility">
+            <input type="password" id="createPasswordInput"
+              class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__pass" placeholder="Придумайте пароль" required>
+              <button type="button" class="registration-popup__pass-btn password-visibility__btn"></button>
+          </label>
+          <label class="registration-popup__pass-label password-visibility">
+            <input type="password" class="registration-popup__input registration-popup__pass-input form-validation__item input password-visibility__input form-validation__repeat-pass" placeholder="Повторите пароль" required>
+              <button type="button" class="registration-popup__pass-btn password-visibility__btn"></button>
+          </label>
+          <label for="createPasswordInput" class="registration-popup__input-pass-label">
+            Пароль должен содержать от 6 символов
+          </label>
+          <button type="submit" class="registration-popup__submit form-validation__submit color-btn">Зарегистрироваться</button>
+        </form>
+        <div class="registration-popup__btn-block">
+          <span class="registration-popup__btn-descr">
+            Есть аккаунт?
+          </span>
+          <button type="button" class="registration-popup__btn main-btn btn-standart js-open-popup-btn" data-popup-name="sign-in-popup">войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup gratitude-popup js-popup">
+  <div class="popup__table gratitude-popup__table">
+    <div class="popup__table-cell gratitude-popup__cell js-popup-area">
+      <div class="popup__window gratitude-popup__window">
+        <button type="button" class="popup__close gratitude-popup__close js-popup-close"></button>
+        <h3 class="gratitude-popup__title popup-title">
+          Благодарим за покупку!
+        </h3>
+        <p class="gratitude-popup__descr">
+          В ближайшее время с вами свяжется менеджер для подтверждения заказа
+        </p>
+        <a href="#" class="gratitude-popup__btn color-btn" >
+          личный кабинет
+        </a>
+        <div class="gratitude-popup__recommended-block recommended-block">
+          <h3 class="recommended-block__title recommended-block-title">
+            Вам может понравиться
+          </h3>
+          <div class="recommended-block__inner">
+            <article class="recommended-block__item product-item js-product-item" data-price="1053">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-1.webp" type="image/webp"><img src="img/temp/product-item/product-item-1.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        Пряжа Arachna "Macrame MINI"
+      </h4>
+      
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">1053</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+            <article class="recommended-block__item product-item js-product-item" data-price="852">
+  <button type="button" class="product-item__favorites favorites-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="favorites-btn__icon">
+      <path class="favorites-btn__icon-bg"
+        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+      <path class="favorites-btn__icon-border"
+        d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+    </svg>
+  </button>
+  <div class="product-item__dots"></div>
+  <div class="product-item__img-block">
+    <picture><source srcset="img/temp/product-item/product-item-2.webp" type="image/webp"><img src="img/temp/product-item/product-item-2.jpg" alt="" class="product-item__img"></picture>
+  </div>
+  <div class="product-item__info">
+    <div class="product-item__text-block">
+      <h4 class="product-item__title">
+        Шнур "Gamma" 0.8 мм, 50 м
+      </h4>
+      
+    </div>
+    <div class="product-item__colors-block">
+      <div class="product-item__colors">
+        <span class="product-item__color-circle" style="background-color: #FAF9F6;"></span>
+        <span class="product-item__color-circle" style="background-color: #0395AF;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+        <span class="product-item__color-circle" style="background-color: #F09482;"></span>
+      </div>
+      <div class="product-item__color-num">+2</div>
+    </div>
+    <div class="product-item__price">
+      <span class="product-item__price-num">852</span>
+      <span class="product-item__price-currency">₽</span>
+    </div>
+  </div>
+  <a href="#" class="product-item__btn btn-standart main-btn">
+    <svg class="product-item__btn-icon">
+      <use xlink:href="img/icons/icons.svg#basket"></use>
+    </svg>
+    В корзину
+  </a>
+</article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="js/app.min.js?_v=20221106153714"></script>
+</body>
+
+</html>
